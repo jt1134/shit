@@ -15,7 +15,7 @@ GTFO() {
 }
 
 MakeBabies() {
-	Doit "$1" && Impregnate "$1" && GTFO
+	DoIt "$1" && Impregnate "$1" && GTFO
 }
 
 GTFO
