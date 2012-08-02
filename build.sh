@@ -20,7 +20,7 @@ MakeBabies() {
 
 GTFO
 if [ ! "$1" ]; then
-	for x in "$DEVICES"
+	for x in $DEVICES
 	do
 		MakeBabies "$x"
 	done
