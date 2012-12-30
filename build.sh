@@ -1,5 +1,5 @@
 #!/bin/bash
-DEVICES="fascinatemtd mesmerizemtd showcasemtd"
+DEVICES="fascinatemtd p1c"
 . build/envsetup.sh
 
 DoIt() {
@@ -7,11 +7,11 @@ DoIt() {
 }
 
 Impregnate() {
-	cp out/target/product/"$1"/cm-10-*.zip ~/Dropbox/Public || exit 1
+	cp out/target/product/"$1"/cm-10.1-*.zip ~/roms || exit 1
 }
 
 GTFO() {
-	rm -rf out
+	rm -rf out/target/product
 }
 
 MakeBabies() {
