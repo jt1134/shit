@@ -1,4 +1,5 @@
 #!/bin/bash
+startTime=`date`
 DEVICES="fascinatemtd p1c"
 . build/envsetup.sh
 
@@ -27,4 +28,8 @@ if [ ! "$1" ]; then
 else
 	MakeBabies "$1"
 fi
+
+echo
+echo "Start Time : $startTime"
+echo "End Time   : `date`"
 
