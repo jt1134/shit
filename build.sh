@@ -4,11 +4,11 @@ DEVICES="fascinatemtd p1c"
 . build/envsetup.sh
 
 DoIt() {
-	brunch "$1" || exit 1
+	brunch "$@" || exit 1
 }
 
 Impregnate() {
-	cp out/target/product/"$1"/cm-10.1-*.zip ~/roms || exit 1
+	cp out/target/product/"$@"/cm-10.1-*.zip ~/roms || exit 1
 }
 
 GTFO() {
@@ -16,7 +16,7 @@ GTFO() {
 }
 
 MakeBabies() {
-	DoIt "$1" && Impregnate "$1" && GTFO
+	DoIt "$@" && Impregnate "$@" && GTFO
 }
 
 GTFO
