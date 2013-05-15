@@ -5,10 +5,27 @@ HOME=$(pwd)
 
 REPOS="bionic \
        build \
+       external/chromium \
+       external/dnsmasq \
+       external/e2fsprogs \
+       external/lsof \
+       external/openssl \
+       external/openssh \
+       external/openvpn \
        external/oprofile \
+       external/ping \
+       external/skia \
+       external/stlport \
        external/v8 \
+       external/webkit \
+       external/wpa_supplicant_8 \
+       frameworks/av \
        frameworks/base \
+       frameworks/ex \
+       frameworks/native \
        frameworks/rs \
+       frameworks/wilhelm \
+       libcore \
        packages/apps/DeskClock \
        packages/apps/Mms \
        packages/apps/Settings \
@@ -33,6 +50,7 @@ do
         break
     fi
     echo -e "\n### PUSHING of \"$x\" TO GITHUB SUCCESSFUL ###\n"
+    rm -f err.txt
     cd $HOME
 done
 
