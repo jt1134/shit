@@ -23,6 +23,7 @@ REPOS="bionic \
        frameworks/base \
        frameworks/ex \
        frameworks/native \
+       frameworks/opt/telephony \
        frameworks/rs \
        frameworks/wilhelm \
        libcore \
