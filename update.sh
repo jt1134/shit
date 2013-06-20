@@ -44,7 +44,7 @@ do
         break
     fi
     echo -e "\n### MERGE of \"$x\" SUCCESSFUL ###\n"
-    git push origin myjb-next 2>err.txt
+    git push private myjb-next 2>err.txt
     if [ $? != 0 ]; then
         echo -e "\n### PUSHING of \"$x\" TO GITHUB FAILED ###\n"
         cat err.txt
