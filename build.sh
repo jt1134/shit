@@ -1,6 +1,6 @@
 #!/bin/bash
 startTime=`date`
-DEVICES="fascinatemtd p1c"
+DEVICES="fascinatemtd"
 . build/envsetup.sh
 
 DoIt() {
@@ -8,18 +8,18 @@ DoIt() {
 }
 
 Impregnate() {
-	cp out/target/product/"$@"/cm-10.1-*.zip ~/roms || exit 1
+	cp out/target/product/"$@"/cm-10.1-*.zip ~/Dropbox/Public || exit 1
 }
 
 GTFO() {
-	rm -rf out/target/product
+	rm -rf out/target
 }
 
 MakeBabies() {
 	DoIt "$@" && Impregnate "$@" && GTFO
 }
 
-GTFO
+rm -rf out
 if [ ! "$1" ]; then
 	for x in $DEVICES
 	do
