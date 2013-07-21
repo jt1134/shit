@@ -5,6 +5,7 @@ HOME=$(pwd)
 
 REPOS="bionic \
        build \
+       dalvik \
        external/chromium \
        external/dnsmasq \
        external/e2fsprogs \
