@@ -1,6 +1,6 @@
 #!/bin/bash
 startTime=`date`
-DEVICES="fascinatemtd"
+DEVICES="expressatt"
 . build/envsetup.sh
 
 DoIt() {
